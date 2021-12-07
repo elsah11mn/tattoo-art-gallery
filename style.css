@@ -1,1 +1,21 @@
-/* CSS file */
+* {
+    
+}
+
+#banner {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;   
+}
+
+#banner-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#tattoo-machine-logo {
+    height: 100px;
+}
