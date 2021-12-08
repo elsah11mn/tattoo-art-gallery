@@ -1,21 +1,37 @@
 * {
-    
+    margin: 0 auto;
+    box-sizing: border-box;
+    @import: url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+    font-family: 'Readex Pro', sans-serif;
 }
 
 #banner {
-    height: 100px;
+    height: 120px;
     display: flex;
     flex-direction: row;
     align-items: center; 
-    justify-content: space-between;   
+    justify-content: space-between;  
+    background: linear-gradient(45deg, #17BEBB, #000 70%); 
 }
 
 #banner-links {
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    justify-content: space-around;
+}
+
+#banner-links a {
+    margin: 50px;
+    color: #F0EFF4;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 #tattoo-machine-logo {
     height: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 50px;
 }
