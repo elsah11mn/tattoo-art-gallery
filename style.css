@@ -2,28 +2,37 @@
     margin: 0 auto;
     box-sizing: border-box;
     @import: url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
-    font-family: 'Readex Pro', sans-serif;
+    @import: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,400&display=swap');
+    @import: url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
 }
 
 #banner {
     height: 120px;
     display: flex;
     flex-direction: row;
-    align-items: center; 
-    justify-content: space-between;  
-    background: linear-gradient(45deg, #17BEBB, #000 70%); 
-}
-
-#banner-links {
-    display: flex;
-    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(45deg, #17BEBB, #000); 
 }
 
 #banner-links a {
-    margin: 50px;
+    margin: 0;
+    padding: 0px 20px;
     color: #F0EFF4;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
+    font-family: 'Readex Pro', sans-serif;
+    text-transform: uppercase;
+    border-right: 2px solid white;
+    letter-spacing: 2px;
+}
+
+#banner-links :last-child {
+    border-right: none;
+}
+#banner-title-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #tattoo-machine-logo {
@@ -33,5 +42,54 @@
 h1 {
     text-align: center;
     margin: 10px;
-    font-size: 50px;
+    font-size: 40px;
+    font-family: 'Miltonian Tattoo', cursive;
+    color: ghostwhite;
+    text-align: right;
+}
+
+footer {
+    font-size: 12px;
+    background-color: #2E282A;
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.footer-container {
+    display: inline-flex;
+    width: 80%;
+    margin: 20px;
+}
+
+.footer-info {
+    width: 70%;
+    margin: 0 10px;
+}
+
+.footer-newsletter-signup {
+    width: 30%;
+    margin: 0 10px
+}
+
+#newsletter-signup-text {
+    border-radius: 3px 0 0 3px;
+    border: none;
+    height: 25px;
+}
+
+#newsletter-signup-submit {
+    height: 25px;
+    border-radius: 0 3px 3px 0;
+    background-color: #F9C80E;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    margin-left: -5px;
+    margin-top: 5px;
+}
+
+#newsletter-signup-submit:hover {
+    background-color: #C79D05;
 }
