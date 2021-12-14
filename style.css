@@ -93,3 +93,41 @@ footer {
 #newsletter-signup-submit:hover {
     background-color: #C79D05;
 }
+
+.my-slider-progress {
+    background: #ccc;
+}¨
+
+.my-slider-progress-bar {
+    background: greenyellow;
+    height: 2px;
+    transition: width 400ms ease;
+    width: 0;
+}
+
+.splide__slide {
+    height: 400px;
+    text-align: center;
+}
+
+.splide__slide p {
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
+    text-shadow: 2px black;
+}
+
+.splide__slide__1 {
+    background-image: url("sailorjerry.jpg");
+    background-position: center;
+    color: black 20%;
+}
+
+.splide__slide__2 {
+    background-image: url("pablolillo.jpg");
+    background-position: center;
+}
+
+.splide__slide__3 {
+    background-image: url("edhardyjpg.jpg");
+    background-position: center;
+}
