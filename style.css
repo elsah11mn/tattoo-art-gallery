@@ -95,11 +95,11 @@ footer {
 }
 
 .my-slider-progress {
-    background: #ccc;
+    background: black;
 }
 
 .my-slider-progress-bar {
-    background: greenyellow;
+    background: ghostwhite;
     height: 2px;
     transition: width 400ms ease;
     width: 0;
