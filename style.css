@@ -8,11 +8,15 @@
 }
 
 #banner {
-    height: 120px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     background: linear-gradient(45deg, #17BEBB, #000); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 #banner-links a {
@@ -36,16 +40,125 @@
 }
 
 #tattoo-machine-logo {
-    height: 100px;
+    height: 70px;
+}
+
+main {
+    background-color: ghostwhite;
+    padding-top: 100px;
 }
 
 h1 {
     text-align: center;
     margin: 10px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Miltonian Tattoo', cursive;
     color: ghostwhite;
     text-align: right;
+}
+
+.my-slider-progress {
+    background: #F7F7FF;
+}
+
+.my-slider-progress-bar {
+    background: #EF3E36;
+    height: 5px;
+    transition: width 400ms ease;
+    width: 0;
+}
+
+.splide__slide {
+    height: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.splide-slide-text {
+    width: 50%;
+}
+
+.splide__slide h3{
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
+    text-shadow: 2px 2px 8px black;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.splide__slide p {
+    color: white;
+    font-style: italic;
+    background-color: rgba(46, 40, 42, 0.5);
+    display: inline;
+}
+
+.splide__slide__1 {
+    background-image: url("bilder/tattooartist.jpg");
+    background-position: center;
+    color: black 20%;
+}
+
+.splide__slide__2 {
+    background-image: url("bilder/tattooinks.jpg");
+    background-position: center;
+}
+
+.splide__slide__3 {
+    background-image: url("bilder/tattooflashwall.jpg");
+    background-position: center;
+}
+
+.index-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.index-info h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.index-info-paragraphs {
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 1px;
+}
+
+.index-info-right-paras {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 70%;
+}
+
+.index-info-right-paras p {
+    background-color: #F9C80E;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.index-info-right-paras p:first-of-type {
+    width: 65%;
+}
+
+.index-info-right-paras p:last-of-type {
+    width: 35%;
+}
+
+.index-info-left-para {
+    width: 30%;
+}
+
+.index-info-left-para p {
+    background-color: #EF3E36;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 2px;
 }
 
 footer {
@@ -93,82 +206,3 @@ footer {
     background-color: #C79D05;
 }
 
-main {
-    width: 90%;
-    background-color: ghostwhite;
-}
-
-.my-slider-progress {
-    background: #F7F7FF;
-}
-
-.my-slider-progress-bar {
-    background: #EF3E36;
-    height: 5px;
-    transition: width 400ms ease;
-    width: 0;
-}
-
-.splide__slide {
-    height: 400px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-
-.splide-slide-text {
-    width: 50%;
-}
-
-.splide__slide h3{
-    color: white;
-    font-family: 'Readex Pro', sans-serif;
-    text-shadow: 2px 2px 8px black;
-    vertical-align: middle;
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.splide__slide p {
-    color: white;
-    font-style: italic;
-    background-color: rgba(46, 40, 42, 0.5);
-    display: inline;
-}
-
-.splide__slide__1 {
-    background-image: url("bilder/tattooartist.jpg");
-    background-position: center;
-    color: black 20%;
-}
-
-.splide__slide__2 {
-    background-image: url("bilder/tattooinks.jpg");
-    background-position: center;
-}
-
-.splide__slide__3 {
-    background-image: url("bilder/tattooflashwall.jpg");
-    background-position: center;
-}
-
-.index-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.index-info h2 {
-    margin: 10px;
-    text-align: center;
-}
-
-.index-info-paragraphs {
-    display: flex;
-    flex-direction: row;
-}
-
-.index-info-paragraphs p {
-    background-color: #F9C80E;
-    margin: 10px;
-    padding: 10px;
-}
