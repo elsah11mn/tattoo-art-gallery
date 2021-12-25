@@ -27,7 +27,6 @@ const tattooIdeaListClick = document.getElementById('tattoo-list')
 //(to remove list item)
 tattooIdeaListClick.addEventListener('click', RemoveIdea);
 
-
 //func as stated above 
 function RemoveIdea(e) {
     //tragets parent node of list item
@@ -38,3 +37,22 @@ function RemoveIdea(e) {
     let tattooList = document.getElementById('tattoo-list');
     tattooList.removeChild(removeLi);
 }
+
+//Display example image when hovering over it 
+let img = document.getElementById('tattoo-example-image');
+
+function showImgOne() {
+    img.src = 'bilder/pikachutattoo.jpg';
+}
+
+function showImgTwo() {
+    img.src = 'bilder/tumblr_oc2mfkv2XS1re71vio1_1280.png';
+}
+
+function showImgThree() {
+    img.src = 'bilder/d404922b24e2803a7dbd0a1cac86d6d9.jpg';
+}
+
+function noImg() {
+    img.src = '';
+} 
