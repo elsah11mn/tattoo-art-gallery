@@ -28,7 +28,45 @@
         </div>
     </header>
     <main>
-
+        <h2>Contact</h2>
+        <div id="main">
+            <form action=""> <!-- No action page exists at the moment. -->
+                <div id="fieldset-contact">
+                    <fieldset>
+                        <legend>Contact us!</legend>
+                        <div>
+                            <div id="section-personal-information" class="section-form-content">
+                                <label for="firstname">First name</label><br>
+                                <input type="text" id="firstname"><br>
+                                <label for="lastname">Last name</label><br>
+                                <input type="text" id="lastname"><br>
+                                <label for="email">Email address</label><br>
+                                <input type="text" id="email"><br>
+                            </div>
+                            <div id="section-message" class="section-form-content">
+                                <label for="message">Message</label><br>
+                                <textarea id="message" cols="60" rows="8" placeholder="Write your message here."></textarea><br>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="section-customer-questions" class="section-form-content">
+                                <label for="customer">Are you a tattoo artist?</label><br>
+                                <label for="radioyes">Yes</label>
+                                <input type="radio" name="customeranswer" value="yes" id="radioyes">
+                                <label for="radiono">No</label>
+                                <input type="radio" name="customeranswer" value="no" id="radiono"><br>
+                                <label for="newsletter">Check this box to sign up for our newsletter</label>
+                                <input type="checkbox" id="newsletter" value="yes"><br>
+                            </div>
+                            <div id="section-buttons" class="section-form-content">
+                                <button type="submit" onclick="alert('Your message has been sent.')">Send message</button>
+                                <button type="reset">Reset input</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="footer-container">

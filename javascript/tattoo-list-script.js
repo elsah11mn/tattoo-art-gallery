@@ -39,20 +39,30 @@ function RemoveIdea(e) {
 }
 
 //Display example image when hovering over it 
+//Gets image element from html
 let img = document.getElementById('tattoo-example-image');
 
+//When calling (on mouseover on thumnbnail) this function in html document, assign the above
+//retrived image an src value of the first image of tattoo examples
 function showImgOne() {
     img.src = 'bilder/pikachutattoo.jpg';
 }
 
+//When calling (on mouseover on thumnbnail) this function in html document, assign the above
+//retrived image an src value of the second image of tattoo examples
 function showImgTwo() {
     img.src = 'bilder/tumblr_oc2mfkv2XS1re71vio1_1280.png';
 }
 
+//When calling (on mouseover on thumnbnail) this function in html document, assign the above
+//retrived image an src value of the third image of tattoo examples
 function showImgThree() {
     img.src = 'bilder/d404922b24e2803a7dbd0a1cac86d6d9.jpg';
 }
 
+//When calling this function (on mouseleave), make src value empty
+//(no image to show when none is hoverded over)
 function noImg() {
     img.src = '';
 } 
+
