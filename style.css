@@ -167,6 +167,7 @@ footer {
     color: ghostwhite;
     display: flex;
     justify-content: center;
+    align-self: flex-end;
 }
 
 .footer-container {
@@ -206,3 +207,46 @@ footer {
     background-color: #C79D05;
 }
 
+#tattoo-list-container {
+    width: 40%;
+    margin: auto;
+    background-color: #F9C80E;
+}
+
+#tattoo-list-element {
+    margin: 20px;
+    padding: 10px;
+}
+
+#tattoo-list-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#tattoo-list-flex-right ul li {
+    list-style: none;
+}
+
+#btnAddIdea {
+    background-color: ghostwhite;
+    border-radius: 2px;
+    padding: 2px;
+    border: 2px solid ghostwhite;
+    margin: 5px 0px;
+}
+
+#delete-item {
+    background-color: ghostwhite;
+    color:rgba(46, 40, 42);
+    padding: 2px;
+    margin: 2px;
+}
+
+#input-tattoo-ideas {
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

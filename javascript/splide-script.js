@@ -1,4 +1,4 @@
-var splide = new Splide( '.splide' );
+var splide = new Splide( '.splide' ); 
 var bar    = splide.root.querySelector( '.my-slider-progress-bar' );
 
 // Update the bar width:
