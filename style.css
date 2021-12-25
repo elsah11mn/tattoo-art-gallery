@@ -221,7 +221,6 @@ footer {
 #tattoo-list-flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 #tattoo-list-flex-right ul li {
@@ -245,8 +244,10 @@ footer {
 
 #input-tattoo-ideas {
     margin: 5px 0px;
+}
+
+#tattoo-list li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
