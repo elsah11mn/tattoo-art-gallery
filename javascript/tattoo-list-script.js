@@ -12,6 +12,9 @@ btn.onclick = function createListlement() {
          //sets list element to user's input and creates div to serve as delete button for li element
         liElement.innerHTML = `${userInput}<button id="delete-item">Delete</button>`;
         list.appendChild(liElement); //adding element to list
+
+        //Empties input box
+        document.getElementById('input-tattoo-ideas').value='';
     }   
 
     //If no input, tell the user to enter something
