@@ -30,22 +30,22 @@
     <main>
         <h2>Contact</h2>
         <div id="main">
-            <form action=""> <!-- No action page exists at the moment. -->
+            <form action="" name="contact-form"> <!-- No action page exists at the moment. -->
                 <div id="fieldset-contact">
                     <fieldset>
                         <legend>Contact us!</legend>
                         <div>
                             <div id="section-personal-information" class="section-form-content">
                                 <label for="firstname">First name</label><br>
-                                <input type="text" id="firstname"><br>
+                                <input type="text" id="firstname" class="check-input"><br>
                                 <label for="lastname">Last name</label><br>
-                                <input type="text" id="lastname"><br>
+                                <input type="text" id="lastname" class="check-input"><br>
                                 <label for="email">Email address</label><br>
-                                <input type="text" id="email"><br>
+                                <input type="text" id="email" class="check-input"><br>
                             </div>
                             <div id="section-message" class="section-form-content">
                                 <label for="message">Message</label><br>
-                                <textarea id="message" cols="60" rows="8" placeholder="Write your message here."></textarea><br>
+                                <textarea id="message" class="check-input" cols="60" rows="8" placeholder="Write your message here."></textarea><br>
                             </div>
                         </div>
                         <div>
@@ -59,7 +59,7 @@
                                 <input type="checkbox" id="newsletter" value="yes"><br>
                             </div>
                             <div id="section-buttons" class="section-form-content">
-                                <button type="submit" onclick="alert('Your message has been sent.')">Send message</button>
+                                <button onclick="inputOkContact()" type="submit" id="submit-form">Send message</button>
                                 <button type="reset">Reset input</button>
                             </div>
                         </div>
@@ -68,6 +68,7 @@
             </form>
         </div>
     </main>
+    <script src="javascript/contact-script.js"></script>
     <footer>
         <div class="footer-container">
             <div class="footer-info">

@@ -2,7 +2,7 @@
 const btn = document.getElementById('btnAddIdea'); //retrieves button btnAddIdea from id
 
 //Function to add elements to list
-btn.onclick = function() {
+btn.onclick = function createListlement() {
     const userInput = document.getElementById('input-tattoo-ideas').value; //vaulue of data
     const list = document.querySelector('ul'); //retrieves ul
 
@@ -65,4 +65,3 @@ function showImgThree() {
 function noImg() {
     img.src = '';
 } 
-
