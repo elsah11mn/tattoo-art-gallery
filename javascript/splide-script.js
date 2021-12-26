@@ -1,3 +1,4 @@
+//Script for Splide.js
 var splide = new Splide( '.splide' ); 
 var bar    = splide.root.querySelector( '.my-slider-progress-bar' );
 
