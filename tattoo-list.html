@@ -42,7 +42,7 @@
                     <img src="bilder/d404922b24e2803a7dbd0a1cac86d6d9.jpg" alt="" onmouseover="showImgThree()" onmouseleave="noImg()">
                 </div>
                 <div id="focus-image">
-                    <img src="" alt="" id="tattoo-example-image">
+                    <img src="" alt="" id="tattoo-example-image"> <!--src empty now but is assigned value in JS-->
                 </div>
             </div>
             <div id="tattoo-list-container">
@@ -50,7 +50,7 @@
                     <h3>Add your tattoo ideas!</h3>
                     <div id="tattoo-list-flex-container">
                         <div id="tattoo-list-flex-left">
-                            <input type="text" name="" id="input-tattoo-ideas" placeholder="Ideas go here!">
+                            <input type="text" id="input-tattoo-ideas" placeholder="Ideas go here!">
                             <div>
                                 <button id="btnAddIdea">Add Idea</button>
                             </div>
@@ -71,8 +71,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam fugiat cum autem sequi rem sed deserunt vitae architecto nam velit consequuntur eveniet molestiae, omnis, quam deleniti ut molestias magnam id ratione animi! Natus adipisci cum accusantium! Beatae ipsum nostrum delectus.<p>
             </div>
             <div class="footer-newsletter-signup">
-                <form action="">
-                    <label for="newsletter-signup">Sign up for our newsletter!</label>
+                <form> <!--No action page exists at the moment-->
+                    <label>Sign up for our newsletter!</label>
                     <input type="text" name="email-input" id="newsletter-signup-text" placeholder="youremail@here.com">
                     <input type="submit" value="submit" id="newsletter-signup-submit">
                 </form>
