@@ -10,7 +10,7 @@ btn.onclick = function createListlement() {
     if(userInput != '') {
         let liElement = document.createElement('li'); //creates li element (list item)
          //sets list element to user's input and creates div to serve as delete button for li element
-        liElement.innerHTML = `${userInput}<div id="delete-item">Delete</div>`;
+        liElement.innerHTML = `${userInput}<button id="delete-item">Delete</button>`;
         list.appendChild(liElement); //adding element to list
     }   
 

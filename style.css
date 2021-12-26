@@ -1,10 +1,19 @@
 * {
     margin: 0 auto;
     box-sizing: border-box;
-    @import: url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
-    @import: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,400&display=swap');
-    @import: url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
-    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #2E282A;;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Miltonian Tattoo', cursive;
+    color: ghostwhite;
+    text-align: right;
+    font-weight: 600;
 }
 
 h2 {
@@ -13,6 +22,32 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+
+button {
+    padding: 5px;
+    background-color: #17BEBB;
+    border: 2px solid #17BEBB;
+    border-radius: 2px;
+}
+
+button:hover {
+    font-style: italic;
+    background-color: #107F7D;
+    border-color: #107F7D;
+    color: ghostwhite;
+}
+
+button:active {
+    background-color: #92F2F0;
+    border-color: #92F2F0;
+} 
+
+input {
+    border: 2px solid gray;
+    height: 30px;
 }
 
 #banner {
@@ -52,17 +87,10 @@ h2 {
 }
 
 main {
-    background-color: ghostwhite;
     padding-top: 100px;
-}
-
-h1 {
-    text-align: center;
-    margin: 10px;
-    font-size: 30px;
-    font-family: 'Miltonian Tattoo', cursive;
-    color: ghostwhite;
-    text-align: right;
+    background-color: #C9F8F7;
+    width: 80%;
+    box-shadow: rgba(46, 40, 42) 0 10px 20px;
 }
 
 .my-slider-progress {
@@ -89,7 +117,7 @@ h1 {
 
 .splide__slide h3{
     color: white;
-    font-family: 'Readex Pro', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: 2px 2px 8px black;
     vertical-align: middle;
     font-size: 50px;
@@ -128,7 +156,6 @@ h1 {
 .index-info-paragraphs {
     display: flex;
     flex-direction: row;
-    letter-spacing: 1px;
 }
 
 .index-info-right-paras {
@@ -180,8 +207,12 @@ footer {
 }
 
 .footer-info {
-    width: 70%;
+    width: 80%;
     margin: 0 10px;
+}
+
+.footer-info p, label {
+    color: ghostwhite;
 }
 
 .footer-newsletter-signup {
@@ -217,8 +248,6 @@ footer {
 }
 
 #tattoo-list-intro p {
-    background-color: #F4E6A4;
-    letter-spacing: 1px;
     padding: 5px;
 }
 
@@ -310,17 +339,7 @@ footer {
     overflow-x: auto;
 }
 
-#btnAddIdea {
-    background-color: #17BEBB;
-    border-radius: 2px;
-    padding: 2px;
-    border: 2px solid #17BEBB;
-    margin: 5px 0px;
-}
-
 #delete-item {
-    background-color: #17BEBB;
-    color:rgba(46, 40, 42);
     padding: 2px;
     margin: 2px;
 }
@@ -328,16 +347,16 @@ footer {
 #input-tattoo-ideas {
     margin: 5px 0px;
     width: 80%;
-    height: 20px;
 }
 
 #fieldset-contact fieldset {
-    width: 70%;
+    width: 80%;
     margin: 10px auto;
     border: 2px solid #EF3E36;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 #fieldset-contact fieldset div {
@@ -345,11 +364,13 @@ footer {
     padding: 0 10px;
 }
 
+#fieldset-contact fieldset div label {
+    color:rgba(46, 40, 42);
+}
+
 #section-personal-information input {
     margin-bottom: 10px;
-    border: 2px solid gray;
     width: 100%;
-    height: 30px;
 }
 
 #section-personal-information input:focus {
@@ -382,4 +403,36 @@ footer {
 
 #section-buttons button:first-of-type {
     margin-left: 0;
+}
+
+.about-us-section {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 20px;
+    background-color: #F9C80E;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.about-us-section:last-of-type {
+    margin-bottom: 0px;
+}
+
+.about-us-section img {
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+}
+
+.about-us-section div {
+    margin: 10px;
+}
+
+.about-us-section div p {
+    margin: 10px 0;
+}
+
+.about-us-section div button {
+    display: block;
+    text-align: center;
 }

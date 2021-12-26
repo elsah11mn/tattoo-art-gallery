@@ -1,4 +1,4 @@
-//Input check for contact file
+//Input check for contact file (has onclick event in contact.html)
 function inputOkContact() {
     //If one or more boxes are empty (length of input is 0), display
     //an error message (gets box elements by id)
